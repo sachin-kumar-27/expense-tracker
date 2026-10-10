@@ -1,0 +1,30 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui}
+body{min-height:100vh;display:flex;justify-content:center;padding:16px;overflow-x:hidden;background:#eef2ff;position:relative}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 20% 20%,#a5b4fc 0%,transparent 50%),radial-gradient(circle at 80% 80%,#f0abfc 0%,transparent 50%),#eef2ff}
+.container{width:100%;max-width:420px;display:flex;flex-direction:column;gap:16px}
+.top h1{font-size:26px;letter-spacing:-1px}.top p{color:#666;font-size:13px;margin-top:2px}
+.balance-card{background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.6);padding:20px;border-radius:24px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.balance-card small{color:#777;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.balance-card h1{font-size:32px;margin:6px 0 10px}
+.stats{display:flex;gap:14px;font-size:13px}.in{color:#16a34a}.out{color:#dc2626}
+#chart{border-radius:50%;background:#f3f4f6}
+.input-card{background:#fff;padding:16px;border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.06);display:flex;flex-direction:column;gap:12px}
+.tabs{display:flex;background:#f1f5f9;padding:4px;border-radius:12px;gap:4px}
+.tab{flex:1;padding:9px;border:0;border-radius:10px;font-weight:800;font-size:13px;cursor:pointer;background:transparent}
+.tab.active{background:#111;color:#fff}
+.input-card input,.input-card select{padding:13px;border:1px solid #e5e7eb;border-radius:12px;outline:none;font-size:14px;width:100%;min-width:0}
+.row{display:flex;gap:10px}
+#addBtn{padding:14px;background:#111;color:#fff;border:0;border-radius:14px;font-weight:800;font-size:15px;cursor:pointer}
+#addBtn:active{transform:scale(.98)}
+.history{background:#fff;padding:16px;border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.h-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.h-head h3{font-size:16px}.h-head button{border:0;background:0;color:#dc2626;font-weight:700;font-size:12px;cursor:pointer}
+#list{display:flex;flex-direction:column;gap:10px;max-height:360px;overflow:auto}
+.item{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:14px;background:#f9fafb;border:1px solid #f1f5f9}
+.item-left{display:flex;gap:10px;align-items:center;min-width:0}
+.dot{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;background:#fff;border:1px solid #eee}
+.item b{font-size:14px;display:block;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.item small{font-size:11px;color:#888}
+.item-right{text-align:right}.item-right .amt{font-weight:900;font-size:14px}.amt.income{color:#16a34a}.amt.expense{color:#111}
+.del{margin-top:4px;border:0;background:0;color:#999;font-size:11px;cursor:pointer}
+@media(max-width:500px){body{padding:10px}.balance-card h1{font-size:28px}}
